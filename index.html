@@ -1,114 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecco Food</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="img/logo.png" alt="logo"></a>
-        <section>
-            <a href="№">Login</a>
-            <a href="#">Cart(<span>0</span>)</a>
-            <button>Clear cart</button>
-        </section>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Catalog</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <button class="yellowbutton1"></button>
-        <section>
-            <!-- cerousel -->
-        </section>
-        <hr>
-        <section class="products">
-            <h2>Most Popular Prodects</h2>
-            <article id="1">
-                <img src="img/lemon.jpg" alt="Lemon">
-                <h2>Lemon</h2>
-                <p>$7.6</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="2">
-                <img src="img/cauliflower.jpg" alt="Cauliflower">
-                <h2>Cauliflower</h2>
-                <p>$1.2</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="3">
-                <img src="img/corn.jpg" alt="Corn">
-                <h2>Corn</h2>
-                <p>$2</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="4">
-                <img src="img/cucumber.jpg" alt="Cucumber">
-                <h2>Cucumber</h2>
-                <p>$4.5</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="5">
-                <img src="img/kiwi.jpg" alt="Kiwi">
-                <h2>Kiwi</h2>
-                <p>$10</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="6">
-                <img src="img/lime.jpg" alt="Lime">
-                <h2>Lime</h2>
-                <p>$9.6</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="7">
-                <img src="img/peach.jpg" alt="Peach">
-                <h2>Peach</h2>
-                <p>$15.5</p>
-                <button>Add To Card</button>
-            </article>
-            <article id="8">
-                <img src="img/pumpkin.jpg" alt="Pumpkin">
-                <h2>Pumpkin</h2>
-                <p>$3.3</p>
-                <button>Add To Card</button>
-            </article>
-        </section>
-        <section>
-            <h2>Your personal sales guide...</h2>
-            <form action="#" method="POST">
-                <p>stay up to date with <span>discount</span>...</p>
-                <input type="email" name="email" placeholder="Enter your email..."/>
-                <input type="submit" value="Subscribe"/>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <article>
-                <h2>Healing with Honey</h2>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h2>Honey for Your Body</h2>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h2>Honey Recipes</h2>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>            
-        </section>
-        <section>
-            <a href="#">f</a>
-            <a href="#">y</a>
-            <a href="#">i</a>
-        </section>
-        <p>&copy; All rights reserved.</p>
-    </footer>
-    
+    <div class=" wrapper">
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <section>
+                <a href="#" class="button">Login</a>
+                <a href="#" class="link">Cart <i class="fas fa-shopping-basket"></i>(<span>0</span>)</a>
+                <button class="button">Clear cart</button>
+            </section>
+            <nav id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">Catalog</a></li>
+                <li><a href="#" class="link">About us</a></li>
+                <li><a href="#" class="link">Contact</a></li>
+                </ul>
+            </nav>        
+        </header>
+        <main>
+            <hr>
+            <button class="yellowbutton"></button>
+            <section>
+                <!-- cerousel -->
+            </section>
+            <hr>
+            <section class="products">
+                <h2>Most Popular Prodects</h2>
+                <article id="1">
+                    <img src="img/lemon.jpg" alt="Lemon">
+                    <h3>Lemon</h3>
+                    <p class="my-15">$7.6</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="2">
+                    <img src="img/cauliflower.jpg" alt="Cauliflower">
+                    <h3>Cauliflower</h3>
+                    <p class="my-15">$1.2</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="3">
+                    <img src="img/corn.jpg" alt="Corn">
+                    <h3>Corn</h3>
+                    <p class="my-15">$2</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="4">
+                    <img src="img/cucumber.jpg" alt="Cucumber">
+                    <h3>Cucumber</h3>
+                    <p class="my-15">$4.5</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="5">
+                    <img src="img/kiwi.jpg" alt="Kiwi">
+                    <h3>Kiwi</h3>
+                    <p class="my-15">$10</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="6">
+                    <img src="img/lime.jpg" alt="Lime">
+                    <h3>Lime</h3>
+                    <p class="my-15">$9.6</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="7">
+                    <img src="img/peach.jpg" alt="Peach">
+                    <h3>Peach</h3>
+                    <p class="my-15">$15.5</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+                <article id="8">
+                    <img src="img/pumpkin.jpg" alt="Pumpkin">
+                    <h3>Pumpkin</h3>
+                    <p class="my-15">$3.3</p>
+                    <button class="button button--wide">Add To Card</button>
+                </article>
+            </section>
+            <section>
+                <h2>Your personal sales guide...</h2>
+                <div class="img-wrapper">
+                    <form action="#" method="POST">
+                        <p class="discount">stay up to date with <span>discount</span>...</p>
+                        <input type="email" name="email" placeholder="Enter your email..." />
+                        <input type="submit" value="Subscribe" class="button" />
+                    </form>    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <article>
+                    <h2>Healing with Honey</h2>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h3>Honey for Your Body</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h2>Honey Recipes</h2>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+            </section>
+            <section class="social-links">
+                <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                </section>
+            <p>&copy; All rights reserved.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
